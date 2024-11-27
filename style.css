@@ -10,11 +10,18 @@ h1, h2, h3, h4, h5, h6 {
 /* p font */
 p {
     font-family: "Lato", sans-serif;
+    font-size: 17px;
     font-weight: 400;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* list font */
 ul {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+ol {
     font-family: "Lato", sans-serif;
     font-weight: 300;
 }
@@ -37,16 +44,86 @@ ul {
     color: #fff !important;
 }
 
-
-
 /* Portfolio */
 .portfolio-img {
-    width: 200px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
 }
 
-.school{
+p.school {
     font-size: 20px;
     font-weight: 400;
+}
+
+/* Sections */
+
+section {
+    margin-top: 50px;
+    padding: 30px 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+section .row {
+    align-items: center;
+}
+
+
+/* Forms */
+form {
+    margin-top: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+footer img.logo {
+    height: 40px;
+    margin-bottom: 10px;
 }
