@@ -1,10 +1,15 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Righteous&display=swap');
 
+
 /* header font */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Righteous', sans-serif;
     font-weight: 400;
+}
+
+h3{
+    font-size: 23px;
 }
 
 /* p font */
@@ -52,11 +57,6 @@ ol {
     border-radius: 10px;
     margin: 0 auto;
     display: block;
-}
-
-p.school {
-    font-size: 20px;
-    font-weight: 400;
 }
 
 /* Sections */
