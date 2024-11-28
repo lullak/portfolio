@@ -1,5 +1,5 @@
 function validateForm() {
-    const form = document.forms["contact"];
+    const form = document.forms["contactForm"];
 
     const name = form["name"].value.trim();
     const phone = form["phone"].value.trim();
