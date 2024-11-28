@@ -24,18 +24,23 @@ p {
 /* a font */
 a {
     font-family: "Lato", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     color: #222;
+    text-decoration: none;
 }
 
 /* list font */
 ul {
     font-family: "Lato", sans-serif;
     font-weight: 300;
+    list-style: none;
+    padding-inline-start: 0px;
 }
 ol {
     font-family: "Lato", sans-serif;
     font-weight: 300;
+    list-style: none;
+    padding-inline-start: 0px;
 }
 
 /* navigation bar*/
@@ -50,10 +55,38 @@ ol {
     font-size: 16px;
     padding: 10px;
 }
-
-.nav-link.active {
+.navbar-nav .nav-link :hover {
     background-color: #222;
     color: #fff !important;
+}
+
+.nav-link:hover {
+    background-color: #222;
+    color: #fff !important;
+}
+
+/* article */
+article {
+    text-align: center;
+}
+
+/* anchor */
+section {
+    position: relative;
+    scroll-margin-top: 100px;
+}
+
+/* Button */
+.btn:hover {
+    color: #222;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #222;
+    border-color: #222;
 }
 
 /* Portfolio */
