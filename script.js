@@ -1,3 +1,5 @@
+/* form validation */
+
 function validateForm() {
     const form = document.forms["contactForm"];
 
@@ -25,6 +27,8 @@ function validateForm() {
 
     return true;
 }
+
+/* weather widget */
 
 !function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
