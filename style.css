@@ -130,11 +130,6 @@ form {
     font-family: "Lato", sans-serif;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
 
 form input,
 form textarea {
