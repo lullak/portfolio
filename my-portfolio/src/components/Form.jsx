@@ -70,7 +70,7 @@ const FormValidation = () => {
         
         {error && <div style={{ color: 'red' }}>{error}</div>}
         
-        <button type="submit">Submit</button>
+        <button className="btn btn-primary mt-3" type="submit">Submit</button>
       </div>
     </form>
   );

@@ -27,14 +27,6 @@ const Contact = () => (
       <article className="col-md-6 col-12">
         <h2>Contact Form</h2>
         <FormValidation /> {FormValidation}
-        {/* <form action="https://formshow.systementor.se/" method="POST">
-          <div className="form-group">
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <textarea name="message" placeholder="Message" rows="10"></textarea>
-            <button type="submit" className="btn btn-primary mt-3">Submit</button>
-          </div>
-        </form> */}
       </article>
     </div>
   </section>
