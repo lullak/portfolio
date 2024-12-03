@@ -12,6 +12,9 @@ const Contact = () => (
         <h2>Contact Information</h2>
         <p className="mb-5">
           For business inquiries contact me via the form or LinkedIn.
+          <a href="https://www.linkedin.com/in/dennis-bircan-a43bb2135/" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
         </p>
         {/* Map */}
         <div className="map">
