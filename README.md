@@ -1,4 +1,4 @@
-Created a Responsive Portfolio Website using React with form validation, Google maps location and weather forecast for Stochkolm, Sweden from weatherwidget.io.
+Created a Responsive Portfolio Website using React with form validation, Google maps location and weather forecast for Stockholm, Sweden from weatherwidget.io.
 
 Using React, HTML, CSS, Javascript and Bootstrap.
 
