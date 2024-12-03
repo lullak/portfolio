@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "../index.css";
+import cv from '../assets/files/resume.pdf';
 
 const Experience = () => (
   <section id="experience" className="container my-5">
@@ -13,7 +14,7 @@ const Experience = () => (
         <p>
           Experienced Operations and Process Manager with a strong background in leadership, regulatory compliance, and investor relations.
         </p>
-        <a href="/documents/resume.pdf" target="_blank" className="btn btn-primary mb-3">
+        <a href={cv} target="_blank" className="btn btn-primary mb-3">
           <i className="fas fa-download"></i> Download my CV
         </a>
       </article>
