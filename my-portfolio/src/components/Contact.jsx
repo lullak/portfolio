@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "../index.css";
 import WeatherWidget from "./Weather_Widget";
+import FormValidation from "./Form";
 
 const Contact = () => (
   <section id="contact" className="container my-5">
@@ -25,14 +26,15 @@ const Contact = () => (
       </article>
       <article className="col-md-6 col-12">
         <h2>Contact Form</h2>
-        <form action="https://formshow.systementor.se/" method="POST">
+        <FormValidation /> {FormValidation}
+        {/* <form action="https://formshow.systementor.se/" method="POST">
           <div className="form-group">
             <input type="text" name="name" placeholder="Name" required />
             <input type="email" name="email" placeholder="Email" required />
             <textarea name="message" placeholder="Message" rows="10"></textarea>
             <button type="submit" className="btn btn-primary mt-3">Submit</button>
           </div>
-        </form>
+        </form> */}
       </article>
     </div>
   </section>

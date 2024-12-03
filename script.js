@@ -21,7 +21,7 @@ function validateForm() {
         return false;
     }
     if (message === "") {
-        alert("Message must be filled out");
+        alert("Message must be filled out.");
         return false;
     }
 

@@ -38,14 +38,14 @@ ul {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   list-style: none;
-  padding-inline-start: 0px;
+  padding: 0 !important;
 }
 
 ol {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   list-style: none;
-  padding-inline-start: 0px;
+  padding: 0;
 }
 
 /* navigation bar*/
