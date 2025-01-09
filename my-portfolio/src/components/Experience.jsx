@@ -7,7 +7,7 @@ import cv from '../assets/files/resume.pdf';
 const Experience = () => (
   <section id="experience" className="container my-5">
     <div className="row">
-      <article className="col-md-6 col-12">
+      <article className="col-md-12 col-12">
         <h2>Prior Experience</h2>
         <h3>Operations and Process Manager – Investor Relations</h3>
         <p><em>2018-2024</em></p>
@@ -18,7 +18,7 @@ const Experience = () => (
           <i className="fas fa-download"></i> Download my CV
         </a>
       </article>
-      <article className="col-md-6 col-12">
+      {/* <article className="col-md-6 col-12">
         <h2>References</h2>
         <ul>
           <li><a href="https://se.linkedin.com/in/daniel-malmsäter-56506717/sv" target="_blank" rel="noreferrer">Daniel Malmsäter</a></li>
@@ -26,7 +26,7 @@ const Experience = () => (
           <li><a href="https://se.linkedin.com/in/felix-cau-a3991ba3" target="_blank" rel="noreferrer">Felix Cau</a></li>
           <li><a href="https://se.linkedin.com/in/may-adnan-b90793193" target="_blank" rel="noreferrer">May Adnan</a></li>
         </ul>
-      </article>
+      </article> */}
     </div>
   </section>
 );

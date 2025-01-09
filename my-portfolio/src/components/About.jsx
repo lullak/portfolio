@@ -16,7 +16,8 @@ const About = () => (
         <h2>Education</h2>
         <h3>Software Developer .NET</h3>
         <p><em>Nackademin - Graduation 2026</em></p>
-        <h3>Bachelor’s Degree in Economics</h3>
+        <h3>Degree of Bachelor of Science with a major in Business Administration
+</h3>
         <p><em>Mittuniversitetet, Sundsvall - Graduation 2019</em></p>
       </article>
     </div>
