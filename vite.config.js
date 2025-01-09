@@ -5,7 +5,7 @@ export default defineConfig({
   base: '/portfolio/',
   plugins: [react()],
   build: {
-    outDir: 'docs', 
+    outDir: 'docs',
     minify: 'esbuild',
   },
 });
