@@ -12,7 +12,7 @@ const Experience = () => (
         <h3>Operations and Process Manager – Investor Relations</h3>
         <p><em>2018-2024</em></p>
         <p>
-          Experienced Operations and Process Manager with a strong background in leadership, regulatory
+          Experienced Operations and Process Manager with a background in leadership, regulatory
           compliance, and investor relations. Skilled in managing daily operations, improving processes, and
           supporting CEOs and CFOs of publicly listed companies. Expertise in regulatory adherence (Nasdaq
           Stockholm, First North, etc.), project management, and developing IR and corporate websites.</p>
