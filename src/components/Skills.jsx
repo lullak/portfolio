@@ -21,6 +21,8 @@ const Skills = () => (
       <article className="col-md-6 col-12">
         <h2>Portfolio</h2>
         <ul>
+          <li><a href="#" target="_blank" rel="noreferrer">Movie Booking - Using React, TypeScript and JSON server</a></li>
+          <li><a href="https://github.com/lullak/portfolio" target="_blank" rel="noreferrer">Portfolio - Using React</a></li>
           <li><a href="https://github.com/lullak/RPGGameIsengard" target="_blank" rel="noreferrer">Text-based RPG game created in C#</a></li>
           <li><a href="https://github.com/lullak/HotelApp" target="_blank" rel="noreferrer">Hotel management system created in C# using EF Core</a></li>
           <li><a href="https://github.com/lullak/ShotgunGame" target="_blank" rel="noreferrer">Shotgun Game created in C#</a></li>
