@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "../index.css";
-import cv from '../assets/files/resume.pdf';
+import cv from '../assets/files/CV_EN.pdf';
 
 const Experience = () => (
   <section id="experience" className="container my-5">
