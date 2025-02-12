@@ -1,7 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import "../index.css";
 
 const Skills = () => (
   <section id="skills" className="container my-5">

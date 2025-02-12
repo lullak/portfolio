@@ -1,7 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import "../index.css";
 import picture from '../assets/images/Dennis_Bircan_3.jpg';
 
 const About = () => (
