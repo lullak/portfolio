@@ -8,7 +8,7 @@ const About = () => (
   <section id="about" className="container my-5">
     <div className="row">
       <article className="col-md-6 col-12">
-        <h2>About Me /// Testar ghpagesdeploy</h2>
+        <h2>About Me</h2>
         <img className="img-fluid portfolio-img" src={picture} alt="Dennis Bircan" />
         <p className="mt-3">I enjoy staying active through football, gaming, fishing, and regular gym workouts. I’m also passionate about the stock market and investing.</p>
       </article>
