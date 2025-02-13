@@ -132,7 +132,7 @@ function Game() {
       const calculatedAPM = totalCharacters / timeElapsedInMinutes;
       setAPM(Math.round(calculatedAPM));
     }
-  }, [isPlaying, timeLeft, totalCharacters]);
+  }, [isPlaying, timeLeft]);
 
   useEffect(() => {
     return () => {
