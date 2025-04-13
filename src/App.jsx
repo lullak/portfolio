@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 // import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Game from "./components/Game";
+// import Game from "./components/Game";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <About />
         <Skills />
         <Experience />
-        <Game />
+       {/*  <Game />*/}
         {/* <Contact /> */}
       </main>
       <Footer />

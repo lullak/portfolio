@@ -9,9 +9,9 @@ const Skills = () => (
         <ul>
           <li>C# .NET</li>
           <li>ASP .Net</li>
-          <li>Database (EFCore, ADO.Net, T-SQL, MongoDB)</li>
+          <li>Database (EFCore, ADO.Net, SQL, MongoDB)</li>
           <li>
-            Frontend (JavaScript, Typescript, React, Angular, HTML, and CSS)
+            Frontend (JavaScript, Typescript, React, HTML, and CSS)
           </li>
           <li>Object-Oriented Analysis and Design</li>
           <li>Data Communication and Security</li>
@@ -21,6 +21,23 @@ const Skills = () => (
       <article className="col-md-6 col-12">
         <h2>Portfolio</h2>
         <ul>
+        <li>
+            <a
+              href="https://github.com/lullak/Alpha-Backend"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Web Api - ASP.NET, EF Core, JWT, Azure services and more!
+            </a>
+          </li><li>
+            <a
+              href="https://github.com/lullak/alpha-frontend"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Frontend - Using React, connecting to my backend API above
+            </a>
+          </li>
           <li>
             <a
               href="https://github.com/lullak/MovieBooking"

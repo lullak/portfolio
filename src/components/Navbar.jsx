@@ -62,11 +62,11 @@ const Navbar = () => (
                 CV & Experience
               </a>
             </li>
-            <li className="nav-item">
+         {/*   <li className="nav-item">
               <a className="nav-link" href="#typecraft">
                 Minigame
               </a>
-            </li>
+            </li>*/}
             {/* <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li> */}
           </ul>
         </div>
