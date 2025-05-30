@@ -92,8 +92,8 @@ const Skills = () => (
               target="_blank"
               rel="noreferrer"
               className="fw-bold"
-            >
-              Email Service Function
+            ><i className="bi bi-box-arrow-up-right me-1"></i>
+              Email Service Function <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">
               Azure Function that listens to an Azure Service Bus queue and
@@ -107,7 +107,7 @@ const Skills = () => (
               rel="noreferrer"
               className="fw-bold"
             >
-              MVC Web Application - Authentication Module
+              MVC Web Application - Authentication Module <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">
               Authentication module using Identity authentication.
@@ -120,7 +120,7 @@ const Skills = () => (
               rel="noreferrer"
               className="fw-bold"
             >
-              JWT Service
+              JWT Service <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">
               Microservice for JWT authentication using gRPC.
@@ -133,7 +133,7 @@ const Skills = () => (
               rel="noreferrer"
               className="fw-bold"
             >
-              Account Profile Service
+              Account Profile Service <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">
               Microservice for account profiles using gRPC.
@@ -146,7 +146,7 @@ const Skills = () => (
               rel="noreferrer"
               className="fw-bold"
             >
-              Web API
+              Web API (backend) <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">
               ASP.NET, EF Core, JWT, Azure services and more.
@@ -159,7 +159,7 @@ const Skills = () => (
               rel="noreferrer"
               className="fw-bold"
             >
-              Frontend
+              Frontend <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">
               React frontend connecting to my backend API.
@@ -172,7 +172,7 @@ const Skills = () => (
               rel="noreferrer"
               className="fw-bold"
             >
-              Movie Booking
+              Movie Booking <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">
               React, TypeScript, and JSON server.
@@ -185,7 +185,7 @@ const Skills = () => (
               rel="noreferrer"
               className="fw-bold"
             >
-              Portfolio
+              Portfolio <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">
               This portfolio site built with React.
@@ -198,7 +198,7 @@ const Skills = () => (
               rel="noreferrer"
               className="fw-bold"
             >
-              RPG Game Isengard
+              RPG Game <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">
               Text-based RPG game created in C#.
@@ -211,7 +211,7 @@ const Skills = () => (
               rel="noreferrer"
               className="fw-bold"
             >
-              Hotel Management System
+              Hotel Management System <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">Created in C# using EF Core.</div>
           </li>
@@ -222,7 +222,7 @@ const Skills = () => (
               rel="noreferrer"
               className="fw-bold"
             >
-              Shotgun Game
+              Shotgun Game <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">Simple game created in C#.</div>
           </li>
@@ -233,7 +233,7 @@ const Skills = () => (
               rel="noreferrer"
               className="fw-bold"
             >
-              Advertisement App
+              Advertisement App <span className="fa fa-external-link-alt me-1" style={{ fontSize: "0.55em" }}></span>
             </a>
             <div className="small text-muted">Created in C# using ADO.NET.</div>
           </li>
