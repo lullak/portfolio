@@ -6,91 +6,236 @@ const Skills = () => (
     <div className="row">
       <article className="col-md-6 col-12">
         <h2>Skills</h2>
-        <ul>
-          <li>C# .NET</li>
-          <li>ASP .Net</li>
-          <li>Database (EFCore, ADO.Net, SQL, MongoDB)</li>
-          <li>
-            Frontend (JavaScript, Typescript, React, HTML, and CSS)
+        <ul className="list-group">
+          <li className="list-group-item">
+            <span className="fw-bold">C# .NET</span>
+            <div className="small text-muted">
+              Object-oriented programming, LINQ, async/await, and modern .NET
+              features.
+            </div>
           </li>
-          <li>Object-Oriented Analysis and Design</li>
-          <li>Data Communication and Security</li>
-          <li>DevOps</li>
+          <li className="list-group-item">
+            <span className="fw-bold">ASP .NET</span>
+            <div className="small text-muted">
+              Building web APIs and MVC web applications with .NET.
+            </div>
+          </li>
+          <li className="list-group-item">
+            <span className="fw-bold">
+              Microservices, gRPC & REST Communication
+            </span>
+            <div className="small text-muted">
+              Designing and implementing distributed systems and microservices
+              using both gRPC and REST APIs for efficient and scalable
+              service-to-service communication.
+            </div>
+          </li>
+          <li className="list-group-item">
+            <span className="fw-bold">Unit Testing & Integration Testing</span>
+            <div className="small text-muted">
+              Writing automated tests for individual components and for
+              verifying interactions between multiple parts of the application.
+              Experience with tools like xUnit and in-memory databases.
+            </div>
+          </li>
+          <li className="list-group-item">
+            <span className="fw-bold">Azure Cloud</span>
+            <div className="small text-muted">
+              Deploying and managing applications with Azure Functions, Azure
+              Service Bus, Azure Communication Services, and other cloud
+              resources.
+            </div>
+          </li>
+          <li className="list-group-item">
+            <span className="fw-bold">Database</span>
+            <div className="small text-muted">
+              EF Core, ADO.NET, SQL Server, T-SQL, and MongoDB for data storage
+              and management.
+            </div>
+          </li>
+          <li className="list-group-item">
+            <span className="fw-bold">Frontend</span>
+            <div className="small text-muted">
+              JavaScript, TypeScript, React, HTML, and CSS for modern web
+              interfaces.
+            </div>
+          </li>
+          <li className="list-group-item">
+            <span className="fw-bold">Object-Oriented Analysis and Design</span>
+            <div className="small text-muted">
+              Design patterns, SOLID principles, and UML for robust software
+              architecture.
+            </div>
+          </li>
+          <li className="list-group-item">
+            <span className="fw-bold">Data Communication and Security</span>
+            <div className="small text-muted">
+              REST APIs, JWT, HTTPS, authentication, and authorization best
+              practices.
+            </div>
+          </li>
+          <li className="list-group-item">
+            <span className="fw-bold">DevOps</span>
+            <div className="small text-muted">
+              CI/CD pipelines, Azure DevOps, GitHub Actions, and cloud
+              deployments.
+            </div>
+          </li>
         </ul>
       </article>
       <article className="col-md-6 col-12">
         <h2>Portfolio</h2>
-        <ul>
-        <li>
+        <ul className="list-group">
+          <li className="list-group-item">
+            <a
+              href="https://github.com/ASP2G4/EmailServiceFunction"
+              target="_blank"
+              rel="noreferrer"
+              className="fw-bold"
+            >
+              Email Service Function
+            </a>
+            <div className="small text-muted">
+              Azure Function that listens to an Azure Service Bus queue and
+              sends emails via Azure Communication Services.
+            </div>
+          </li>
+          <li className="list-group-item">
+            <a
+              href="https://github.com/ASP2G4/WebApplicationVentixe/tree/master/Authentication"
+              target="_blank"
+              rel="noreferrer"
+              className="fw-bold"
+            >
+              MVC Web Application - Authentication Module
+            </a>
+            <div className="small text-muted">
+              Authentication module using Identity authentication.
+            </div>
+          </li>
+          <li className="list-group-item">
+            <a
+              href="https://github.com/ASP2G4/GrpcJWTService"
+              target="_blank"
+              rel="noreferrer"
+              className="fw-bold"
+            >
+              JWT Service
+            </a>
+            <div className="small text-muted">
+              Microservice for JWT authentication using gRPC.
+            </div>
+          </li>
+          <li className="list-group-item">
+            <a
+              href="https://github.com/ASP2G4/GrpcAccountProfileService"
+              target="_blank"
+              rel="noreferrer"
+              className="fw-bold"
+            >
+              Account Profile Service
+            </a>
+            <div className="small text-muted">
+              Microservice for account profiles using gRPC.
+            </div>
+          </li>
+          <li className="list-group-item">
             <a
               href="https://github.com/lullak/Alpha-Backend"
               target="_blank"
               rel="noreferrer"
+              className="fw-bold"
             >
-              Web Api - ASP.NET, EF Core, JWT, Azure services and more!
+              Web API
             </a>
-          </li><li>
+            <div className="small text-muted">
+              ASP.NET, EF Core, JWT, Azure services and more.
+            </div>
+          </li>
+          <li className="list-group-item">
             <a
               href="https://github.com/lullak/alpha-frontend"
               target="_blank"
               rel="noreferrer"
+              className="fw-bold"
             >
-              Frontend - Using React, connecting to my backend API above
+              Frontend
             </a>
+            <div className="small text-muted">
+              React frontend connecting to my backend API.
+            </div>
           </li>
-          <li>
+          <li className="list-group-item">
             <a
               href="https://github.com/lullak/MovieBooking"
               target="_blank"
               rel="noreferrer"
+              className="fw-bold"
             >
-              Movie Booking - Using React, TypeScript and JSON server
+              Movie Booking
             </a>
+            <div className="small text-muted">
+              React, TypeScript, and JSON server.
+            </div>
           </li>
-          <li>
+          <li className="list-group-item">
             <a
               href="https://github.com/lullak/portfolio"
               target="_blank"
               rel="noreferrer"
+              className="fw-bold"
             >
-              Portfolio - Using React
+              Portfolio
             </a>
+            <div className="small text-muted">
+              This portfolio site built with React.
+            </div>
           </li>
-          <li>
+          <li className="list-group-item">
             <a
               href="https://github.com/lullak/RPGGameIsengard"
               target="_blank"
               rel="noreferrer"
+              className="fw-bold"
             >
-              Text-based RPG game created in C#
+              RPG Game Isengard
             </a>
+            <div className="small text-muted">
+              Text-based RPG game created in C#.
+            </div>
           </li>
-          <li>
+          <li className="list-group-item">
             <a
               href="https://github.com/lullak/HotelApp"
               target="_blank"
               rel="noreferrer"
+              className="fw-bold"
             >
-              Hotel management system created in C# using EF Core
+              Hotel Management System
             </a>
+            <div className="small text-muted">Created in C# using EF Core.</div>
           </li>
-          <li>
+          <li className="list-group-item">
             <a
               href="https://github.com/lullak/ShotgunGame"
               target="_blank"
               rel="noreferrer"
+              className="fw-bold"
             >
-              Shotgun Game created in C#
+              Shotgun Game
             </a>
+            <div className="small text-muted">Simple game created in C#.</div>
           </li>
-          <li>
+          <li className="list-group-item">
             <a
               href="https://github.com/lullak/HotelApp"
               target="_blank"
               rel="noreferrer"
+              className="fw-bold"
             >
-              Advertisement app created in C# using ADO.NET
+              Advertisement App
             </a>
+            <div className="small text-muted">Created in C# using ADO.NET.</div>
           </li>
         </ul>
       </article>
