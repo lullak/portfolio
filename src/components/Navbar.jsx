@@ -18,14 +18,6 @@ const Navbar = () => (
             <i className="fab fa-linkedin fa-2x"></i>
           </a>
           <a
-            href="https://www.instagram.com/lullaak/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-dark mx-2"
-          >
-            <i className="fab fa-instagram fa-2x"></i>
-          </a>
-          <a
             href="https://github.com/lullak"
             target="_blank"
             rel="noreferrer"
