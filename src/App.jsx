@@ -14,8 +14,8 @@ function App() {
       <Navbar />
       <main>
         <About />
-        <Skills />
         <Experience />
+        <Skills />
        {/*  <Game />*/}
         {/* <Contact /> */}
       </main>

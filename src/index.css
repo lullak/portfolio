@@ -110,13 +110,14 @@ section {
 
 /* Sections */
 
-section {
-  margin-top: 50px;
-  padding: 30px 15px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+ section {
+  margin-top: 50px !important;
+  padding: 30px 15px !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  position: relative !important;
+  scroll-margin-top: 100px !important;
 }
 
 section h2 {
@@ -181,4 +182,221 @@ footer {
 footer img.logo {
   height: 40px;
   margin-bottom: 10px;
+}
+
+/* Hobbies: responsive tile/grid layout */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+  align-items: center;
+}
+
+.hobby-item {
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 10px;
+  background: rgba(7, 89, 133, 0.04);
+  color: #0b2a3a;
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(2,8,23,0.03);
+}
+
+.hobby-emoji {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+/* Larger screens: side-by-side (3 columns) and slightly larger tiles */
+@media (min-width: 768px) {
+  .hobbies-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hobby-item {
+    padding: 0.6rem 0.9rem;
+    max-width: none;
+  }
+}
+
+/* If you prefer all items centered within the card, keep the parent text centered */
+.card-body.text-center .hobbies-grid { justify-items: center; }
+
+/* Experience cards */
+.experience-list { width: 100%; }
+
+.experience-card {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(9, 30, 66, 0.06);
+  border: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+}
+
+.experience-card .card-body {
+  padding: 1.15rem 1.25rem;
+}
+
+.experience-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+}
+
+/* Date / role pill */
+.job-pill {
+  background: rgba(6, 78, 120, 0.07);
+  color: #064e78;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+/* Tech badges row */
+.tech-badges .badge {
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.35rem 0.6rem;
+}
+
+/* Tidy up lists */
+.experience-card ul {
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.15rem;
+}
+
+.experience-card ul li {
+  margin-bottom: 0.35rem;
+}
+
+/* Responsive tweaks */
+@media (min-width: 768px) {
+  .experience-card .card-body {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* Experience section: keep section flat so inner cards stand out */
+.flat-section {
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0.5rem 0;
+}
+
+.flat-section .experience-list {
+  padding: 1rem 0;
+}
+
+.flat-section h2 {
+  padding: 0.75rem 0 0.5rem;
+}
+
+/* Skills / Portfolio improvements */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  align-items: stretch;
+}
+
+.skill-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 6px 18px rgba(9, 30, 66, 0.04);
+  border: 1px solid rgba(2,8,23,0.04);
+}
+
+.skill-title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: #0b2a3a;
+}
+
+/* Portfolio project cards */
+.portfolio-list { display: grid; gap: 0.6rem; }
+
+.project-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 6px 18px rgba(9, 30, 66, 0.03);
+  border: 1px solid rgba(2,8,23,0.04);
+}
+
+.project-link {
+  font-weight: 700;
+  color: #064e78;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.project-link:hover {
+  text-decoration: underline;
+  color: #022838;
+}
+
+/* Tighten the small descriptions */
+.project-card .small.text-muted,
+.skill-card .small.text-muted {
+  margin-top: 0.35rem;
+  color: #556b75;
+}
+
+/* Responsive: on medium+ screens make skills grid two columns for denser layout */
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Make project cards slightly larger on wider screens */
+@media (min-width: 992px) {
+  .project-card { padding: 1rem 1.1rem; }
+}
+
+/* Root variables for theming */
+:root{
+  --page-bg-1: #eef6fb; /* top */
+  --page-bg-2: #ffffff; /* bottom */
+  --card-bg: #ffffff;
+  --muted: #556b75;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(180deg, var(--page-bg-1) 0%, var(--page-bg-2) 100%);
+  color: #0b2a3a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Keep section panels slightly transparent so page background shows through */
+section {
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(9,30,66,0.06);
+  padding: 30px 15px;
+}
+
+/* Cards remain pure white for contrast */
+.card {
+  background: var(--card-bg);
+}
+
+/* Muted text color */
+.small.text-muted, p.text-muted {
+  color: var(--muted);
 }
