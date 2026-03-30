@@ -5,7 +5,7 @@ const Navbar = () => (
   <header className="sticky-top">
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#about">
+        <a className="navbar-brand" href="#hero">
           <img src={logo} alt="Logo" className="logo" />
         </a>
         <div className="d-flex align-items-center">
@@ -40,18 +40,23 @@ const Navbar = () => (
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
+              <a className="nav-link" href="#hero">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#experience">
+                Experience
+              </a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link" href="#about">
-                About me
+                About
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#skills">
                 Skills & Portfolio
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#experience">
-                CV & Experience
               </a>
             </li>
          {/*   <li className="nav-item">

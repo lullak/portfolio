@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
@@ -13,8 +14,9 @@ function App() {
     <>
       <Navbar />
       <main>
-        <About />
+        <Hero />
         <Experience />
+        <About />
         <Skills />
        {/*  <Game />*/}
         {/* <Contact /> */}
