@@ -1,11 +1,10 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
 
 const About = () => (
-  <section id="about" className="container my-5">
+  <section id="about">
+    <div className="section-inner">
     <div className="row">
       <article className="col-md-6 col-12">
-        <div className="card portfolio-card h-100 border-0 shadow-sm">
+        <div className="card h-100 border-0 shadow-sm">
           <div className="card-body text-start">
             <h2>Education</h2>
 
@@ -33,48 +32,42 @@ const About = () => (
       </article>
 
       <article className="col-md-6 col-12">
-        <div className="card portfolio-card h-100 border-0 shadow-sm">
-          <div className="card-body text-start">
-            <h2>Languages & About</h2>
+        <div className="card h-100 border-0 shadow-sm">
+          <div className="card-body text-start d-flex flex-column gap-4">
+            <h2>Languages & Interests</h2>
 
-            <div className="mb-4">
-              <h3 className="mb-2">Languages</h3>
-              <ul className="list-unstyled small">
-                <li className="mb-2">
-                  <strong>Swedish</strong> — Native
-                </li>
-                <li className="mb-2">
-                  <strong>English</strong> — Fluent
-                </li>
-                <li>
-                  <strong>Turkish</strong> — Proficient
-                </li>
-              </ul>
+            <div>
+              <h3 className="mb-3">Languages</h3>
+              <div className="d-flex flex-wrap gap-2">
+                <div className="language-pill">
+                  <span className="language-name">Swedish</span>
+                  <span className="language-level">Native</span>
+                </div>
+                <div className="language-pill">
+                  <span className="language-name">English</span>
+                  <span className="language-level">Fluent</span>
+                </div>
+                <div className="language-pill">
+                  <span className="language-name">Turkish</span>
+                  <span className="language-level">Proficient</span>
+                </div>
+              </div>
             </div>
 
             <div>
-              <h3 className="mb-2">Interests</h3>
-              <ul className="list-unstyled small hobbies-grid">
-                <li className="hobby-item">
-                  <span className="hobby-emoji">⚽</span> Football
-                </li>
-                <li className="hobby-item">
-                  <span className="hobby-emoji">🎮</span> Gaming
-                </li>
-                <li className="hobby-item">
-                  <span className="hobby-emoji">🎣</span> Fishing
-                </li>
-                <li className="hobby-item">
-                  <span className="hobby-emoji">🏋️</span> Gym
-                </li>
-                <li className="hobby-item">
-                  <span className="hobby-emoji">📈</span> Investing
-                </li>
-              </ul>
+              <h3 className="mb-3">Interests</h3>
+              <div className="d-flex flex-wrap gap-2">
+                <div className="hobby-item"><span className="hobby-emoji">⚽</span> Football</div>
+                <div className="hobby-item"><span className="hobby-emoji">🎮</span> Gaming</div>
+                <div className="hobby-item"><span className="hobby-emoji">🎣</span> Fishing</div>
+                <div className="hobby-item"><span className="hobby-emoji">🏋️</span> Gym</div>
+                <div className="hobby-item"><span className="hobby-emoji">📈</span> Investing</div>
+              </div>
             </div>
           </div>
         </div>
       </article>
+    </div>
     </div>
   </section>
 );

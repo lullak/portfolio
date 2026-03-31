@@ -1,11 +1,8 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
 import App from "./App.jsx";
 import favicon from "./assets/images/db_logofav_white.png";

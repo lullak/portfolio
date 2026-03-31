@@ -1,9 +1,8 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
 import cv from "../assets/files/Dennis_Bircan_CV.pdf";
 
 const Experience = () => (
-  <section id="experience" className="container my-5 flat-section">
+  <section id="experience">
+    <div className="section-inner">
     <div className="row">
       <article className="col-lg-10 col-md-11 col-12 mx-auto text-start">
         <h2>Experience</h2>
@@ -123,11 +122,12 @@ const Experience = () => (
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              <i className="fas fa-download me-2"></i> Download Full CV & References
+              <i className="bi bi-download me-2"></i> Download Full CV & References
             </a>
           </div>
         </div>
       </article>
+    </div>
     </div>
   </section>
 );

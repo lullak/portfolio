@@ -1,22 +1,18 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Righteous&display=swap');
 
-/* Root variables for theming */
-:root{
-  --page-bg-1: #f5f9f7; /* very light warm green */
-  --page-bg-2: #ffffff; /* clean white */
+/* ─── Variables ─────────────────────────────────────────────────────────── */
+:root {
+  --page-bg-1: #f5f9f7;
+  --page-bg-2: #ffffff;
   --card-bg: #ffffff;
   --muted: #5a6d66;
-  --primary-color: #6B9080; /* warm muted green */
+  --primary-color: #6B9080;
   --primary-dark: #4a5f54;
-  --accent-color: #8BB9A8; /* lighter warm green accent */
-  --accent-light: #a8ccc0;
   --text-dark: #1a1a1a;
-  --border-light: rgba(107, 144, 128, 0.08);
-  --accent-warm: #9dbb9e;
 }
 
-/* Page background */
+/* ─── Base ───────────────────────────────────────────────────────────────── */
 body {
   background: linear-gradient(180deg, var(--page-bg-1) 0%, var(--page-bg-2) 100%);
   color: var(--text-dark);
@@ -25,27 +21,6 @@ body {
   min-height: 100vh;
 }
 
-/* Keep section panels slightly transparent so page background shows through */
-section {
-  background-color: rgba(255,255,255,0.95);
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(9,30,66,0.06);
-  padding: 30px 15px;
-}
-
-/* Cards remain pure white for contrast */
-.card {
-  background: var(--card-bg);
-}
-
-/* Muted text color */
-.small.text-muted, p.text-muted {
-  color: var(--muted);
-}
-
-
-
-/* header */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Righteous', sans-serif;
   font-weight: 400;
@@ -55,11 +30,6 @@ h2 {
   margin-top: 10px;
 }
 
-h3 {
-  font-size: 23px !important;
-}
-
-/* p */
 p {
   font-family: "Lato", sans-serif;
   font-size: 17px;
@@ -68,7 +38,6 @@ p {
   padding-right: 5px;
 }
 
-/* a */
 a {
   font-family: "Lato", sans-serif;
   font-weight: 500;
@@ -76,30 +45,75 @@ a {
   text-decoration: none !important;
 }
 
-/* list */
-ul {
+ul, ol {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   list-style: none;
   padding: 0 !important;
 }
 
-ol {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  list-style: none;
-  padding: 0;
+article {
+  text-align: center;
 }
 
-/* navigation bar*/
-.bg-light {
-  background-color: rgba(245, 249, 247, 0.95) !important;
-  background-image: linear-gradient(180deg, rgba(245, 249, 247, 0.95) 0%, rgba(255, 255, 255, 0.92) 100%) !important;
+.card {
+  background: var(--card-bg);
 }
 
-.navbar.bg-light {
-  background-color: rgba(245, 249, 247, 0.95) !important;
-  background-image: linear-gradient(180deg, rgba(245, 249, 247, 0.95) 0%, rgba(255, 255, 255, 0.92) 100%) !important;
+.small.text-muted, p.text-muted {
+  color: var(--muted);
+}
+
+/* ─── Scroll reveal ──────────────────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Sections ───────────────────────────────────────────────────────────── */
+section {
+  width: 100%;
+  padding: 80px 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: relative;
+  scroll-margin-top: 100px;
+  backdrop-filter: blur(2px);
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 20px;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* ─── Navbar ─────────────────────────────────────────────────────────────── */
+header.sticky-top {
+  z-index: 1030;
+  top: 0;
 }
 
 header .navbar,
@@ -152,19 +166,8 @@ header .navbar,
 
 .navbar-nav .nav-link:hover {
   color: var(--primary-color) !important;
-  background-color: transparent;
 }
 
-.nav-link {
-  transition: all 0.2s ease;
-}
-
-.nav-link:hover {
-  color: var(--primary-color) !important;
-  background-color: transparent !important;
-}
-
-/* Navbar social icons */
 .navbar .text-dark {
   color: var(--text-dark) !important;
   transition: all 0.2s ease;
@@ -175,7 +178,6 @@ header .navbar,
   transform: translateY(-3px);
 }
 
-/* Navbar toggle button */
 .navbar-toggler {
   border-color: rgba(107, 144, 128, 0.2) !important;
   transition: all 0.2s ease;
@@ -190,72 +192,45 @@ header .navbar,
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231a1a1a' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5' d='M6 7h18M6 15h18M6 23h18'/%3e%3c/svg%3e");
 }
 
-/* Header sticky */
-header.sticky-top {
-  z-index: 1030;
-  top: 0;
-}
-
-header {
-  background: linear-gradient(180deg, rgba(245, 249, 247, 0.98) 0%, rgba(255, 255, 255, 0.95) 100%);
-}
-
-header.sticky-top .navbar {
-  box-shadow: 0 4px 20px rgba(107, 144, 128, 0.1);
-  backdrop-filter: blur(12px);
-}
-
-/* article */
-article {
-  text-align: center;
-}
-
-/* anchor */
-section {
-  position: relative;
-  scroll-margin-top: 100px;
-}
-
-
-/* Button */
-.btn:hover {
-  color: #222 !important;
-  background-color: #fff !important;
-  border-color: #fff !important;
+/* ─── Buttons ────────────────────────────────────────────────────────────── */
+.btn {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  padding: 0.6rem 1.25rem;
 }
 
 .btn-primary {
+  background: linear-gradient(135deg, #6B9080 0%, #5a7a6f 100%);
+  border: none;
+  box-shadow: 0 4px 12px rgba(107, 144, 128, 0.2);
   color: #fff !important;
-  background-color: #222 !important;
-  border-color: #222 !important;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5a7a6f 0%, #4a6359 100%);
+  box-shadow: 0 6px 20px rgba(107, 144, 128, 0.3);
+  transform: translateY(-1px);
+  color: #fff !important;
 }
 
 .btn-outline-dark {
-  color: #222 !important;
-  border-color: #222 !important;
+  border-width: 2px;
+  color: var(--text-dark) !important;
+  border-color: var(--text-dark) !important;
 }
 
 .btn-outline-dark:hover {
+  background: var(--text-dark) !important;
   color: #fff !important;
-  background-color: #222 !important;
-  border-color: #222 !important;
+  transform: translateY(-1px);
 }
 
-/* Portfolio */
-.portfolio-img {
-  width: 100%;
-  max-width: 300px !important;
-  height: auto;
-  border-radius: 10px;
-  margin: 0 auto;
-  display: block;
-}
-
-/* Hero section */
+/* ─── Hero ───────────────────────────────────────────────────────────────── */
 .hero-section {
   background: linear-gradient(135deg, #f5f9f7 0%, #f0f6f3 100%) !important;
-  margin-top: 0 !important;
-  padding: 70px 15px !important;
+  padding: 70px 40px !important;
   box-shadow: 0 4px 24px rgba(107, 144, 128, 0.08) !important;
 }
 
@@ -337,7 +312,7 @@ section {
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 50px 15px !important;
+    padding: 50px 20px !important;
   }
 
   .hero-photo {
@@ -351,176 +326,24 @@ section {
   }
 }
 
-/* Sections */
- section {
-  margin-top: 50px !important;
-  padding: 30px 15px !important;
-  background-color: transparent !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  position: relative !important;
-  scroll-margin-top: 100px !important;
-}
-
-section h2 {
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-  text-align: center;
-  color: var(--text-dark);
-}
-
-@media (max-width: 768px) {
-  section {
-    margin-top: 40px !important;
-    padding: 25px 12px !important;
-  }
-
-  section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-/* Form */
-form {
-  margin-top: 20px;
-  font-family: "Lato", sans-serif;
-}
-
-
-form input,
-form textarea {
+/* ─── Experience ─────────────────────────────────────────────────────────── */
+.experience-list {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
-
-form input[type="submit"] {
-  background-color: #222;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-form input[type="submit"]:hover {
-  background-color: #555;
-}
-
-/* Map */
-.map iframe {
-  width: 100%;
-  height: 300px;
-  border: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .map iframe {
-    width: 300px;
-    height: 200px;
-  }
-
-}
-
-/* Footer */
-footer {
-  margin-top: 60px;
-  padding: 40px 20px 30px;
-  text-align: center;
-  background: linear-gradient(180deg, rgba(240, 246, 243, 0.6) 0%, rgba(245, 249, 247, 0.8) 100%);
-  border-top: 1px solid rgba(107, 144, 128, 0.15);
-}
-
-footer img.logo {
-  height: 40px;
-  margin-bottom: 15px;
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
-}
-
-footer img.logo:hover {
-  opacity: 1;
-}
-
-footer a {
-  transition: all 0.2s ease;
-  color: var(--primary-color);
-}
-
-footer a:hover {
-  color: var(--primary-dark);
-}
-
-footer {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-/* Hobbies: responsive tile/grid layout */
-.hobbies-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.5rem;
-  padding: 0;
-  margin: 0;
-  justify-items: center;
-  align-items: center;
-}
-
-.hobby-item {
-  width: 100%;
-  max-width: 240px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-  padding: 0.45rem 0.75rem;
-  border-radius: 10px;
-  background: rgba(107, 144, 128, 0.06);
-  color: var(--text-dark);
-  font-weight: 600;
-  box-shadow: 0 6px 14px rgba(107, 144, 128, 0.03);
-  transition: all 0.2s ease;
-}
-
-.hobby-item:hover {
-  background: rgba(107, 144, 128, 0.12);
-  transform: translateY(-2px);
-}
-
-.hobby-emoji {
-  font-size: 1.1rem;
-  line-height: 1;
-}
-
-/* Larger screens: side-by-side (3 columns) and slightly larger tiles */
-@media (min-width: 768px) {
-  .hobbies-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .hobby-item {
-    padding: 0.6rem 0.9rem;
-    max-width: none;
-  }
-}
-
-/* If you prefer all items centered within the card, keep the parent text centered */
-.card-body.text-center .hobbies-grid { justify-items: center; }
-
-/* Experience cards */
-.experience-list { width: 100%; }
 
 .experience-card {
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(9, 30, 66, 0.06);
-  border: 0;
+  border: 1px solid rgba(107, 144, 128, 0.1);
   overflow: hidden;
   background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  transition: all 0.2s ease;
+}
+
+.experience-card:hover {
+  box-shadow: 0 12px 32px rgba(107, 144, 128, 0.1);
+  border-color: rgba(107, 144, 128, 0.2);
+  transform: translateY(-2px);
 }
 
 .experience-card .card-body {
@@ -534,95 +357,76 @@ footer {
 }
 
 .experience-card ul {
-  padding-left: 1.5rem;
+  list-style: disc;
+  padding-left: 1.25rem !important;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .experience-card ul li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.65rem;
   line-height: 1.6;
 }
 
-/* Date / role pill */
 .job-pill {
-  background: rgba(6, 78, 120, 0.07);
-  color: #064e78;
+  background: rgba(107, 144, 128, 0.1);
+  color: var(--primary-dark);
   font-weight: 600;
   border-radius: 999px;
   padding: 0.45rem 0.7rem;
   font-size: 0.85rem;
   white-space: nowrap;
+  display: inline-block;
+  margin-top: 0.5rem;
 }
 
-/* Tech badges row */
-.tech-badges .badge {
-  font-weight: 600;
-  border-radius: 999px;
-  padding: 0.35rem 0.6rem;
-}
-
-/* Tidy up lists */
-.experience-card ul {
-  margin-top: 0.3rem;
-  margin-bottom: 0.5rem;
-  padding-left: 1.15rem;
-}
-
-.experience-card ul li {
-  margin-bottom: 0.35rem;
-}
-
-/* Responsive tweaks */
 @media (min-width: 768px) {
   .experience-card .card-body {
     padding: 1rem 1.5rem;
   }
 }
 
-/* Experience section: keep section flat so inner cards stand out */
-.flat-section {
-  background-color: transparent;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 0.5rem 0;
+/* ─── Skills tabs ────────────────────────────────────────────────────────── */
+.skills-tabs {
+  margin-top: 1.5rem;
 }
 
-.flat-section .experience-list {
-  padding: 1rem 0;
-}
-
-.flat-section h2 {
-  padding: 0.75rem 0 0.5rem;
-}
-
-/* Skills / Portfolio improvements */
-.skills-section {
+.skills-tab-list {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.skill-category {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-
-.skill-category-title {
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--primary-color);
-  margin: 0 0 0.5rem 0;
-  padding-bottom: 0.6rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   border-bottom: 2px solid rgba(107, 144, 128, 0.15);
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
+  padding-bottom: 0.75rem;
+}
+
+.skills-tab-btn {
+  background: none;
+  border: 1px solid rgba(107, 144, 128, 0.2);
+  border-radius: 20px;
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.skills-tab-btn:hover {
+  background: rgba(107, 144, 128, 0.07);
+  color: var(--text-dark);
+}
+
+.skills-tab-btn.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
 }
 
 .skill-cards {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 0.6rem;
 }
 
@@ -649,194 +453,50 @@ footer {
   font-size: 1rem;
 }
 
-/* Portfolio project cards */
-.portfolio-list {
-  display: grid;
-  gap: 0.7rem;
-}
-
-.project-card {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 1rem 1.1rem;
-  box-shadow: 0 4px 14px rgba(107, 144, 128, 0.05);
-  border: 1px solid rgba(107, 144, 128, 0.1);
-  transition: all 0.2s ease;
-}
-
-.project-card:hover {
-  box-shadow: 0 8px 24px rgba(107, 144, 128, 0.12);
-  border-color: rgba(107, 144, 128, 0.2);
-  transform: translateY(-2px);
-}
-
-.project-card.featured {
-  background: linear-gradient(135deg, rgba(245, 249, 247, 0.8) 0%, rgba(240, 246, 243, 0.5) 100%);
-  border: 1px solid rgba(107, 144, 128, 0.15);
-}
-
-.project-link {
-  font-weight: 700;
-  color: var(--primary-color);
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  font-size: 1rem;
-}
-
-.project-link:hover {
-  color: var(--primary-dark);
-  text-decoration: none;
-}
-
-.project-link i {
-  transition: transform 0.2s ease;
-}
-
-.project-card:hover .project-link i {
-  transform: translateX(2px);
-}
-
-.collapse-trigger {
-  margin-top: 1.5rem;
-}
-
-/* Tighten the small descriptions */
-.project-card .small.text-muted,
 .skill-card .small.text-muted {
   margin-top: 0.4rem;
   color: #556b75;
   line-height: 1.5;
 }
 
-/* Responsive: on medium+ screens make skills grid two columns for denser layout */
-@media (min-width: 768px) {
-  .skill-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Make project cards slightly larger on wider screens */
 @media (min-width: 992px) {
-  .project-card {
-    padding: 1.2rem 1.3rem;
-  }
-
   .skill-card {
     padding: 1.1rem 1.25rem;
   }
 }
 
-/* Button improvements */
-.btn {
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  transition: all 0.2s ease;
+/* ─── GitHub CTA ─────────────────────────────────────────────────────────── */
+.github-cta-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  border: 1px solid rgba(107, 144, 128, 0.12);
+  box-shadow: 0 4px 14px rgba(107, 144, 128, 0.05);
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.github-cta-icon {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+
+.github-cta-btn {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.6rem 1.5rem;
   border-radius: 8px;
-  padding: 0.6rem 1.25rem;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, #6B9080 0%, #5a7a6f 100%);
-  border: none;
-  box-shadow: 0 4px 12px rgba(107, 144, 128, 0.2);
-  color: #fff !important;
-}
-
-.btn-primary:hover {
-  background: linear-gradient(135deg, #5a7a6f 0%, #4a6359 100%);
-  box-shadow: 0 6px 20px rgba(107, 144, 128, 0.3);
-  transform: translateY(-1px);
-  color: #fff !important;
-}
-
-.btn-outline-dark {
-  border-width: 2px;
-  color: var(--text-dark) !important;
-  border-color: var(--text-dark) !important;
-}
-
-.btn-outline-dark:hover {
-  background: var(--text-dark) !important;
-  color: #fff !important;
-  transform: translateY(-1px);
-}
-
-.btn-outline-secondary {
-  color: var(--muted) !important;
-  border-color: var(--muted) !important;
-}
-
-.btn-outline-secondary:hover {
-  background: var(--muted) !important;
-  color: #fff !important;
-  border-color: var(--muted) !important;
-}
-
-/* Section improvements */
-section {
-  backdrop-filter: blur(2px);
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: var(--text-dark);
-  font-weight: 700;
-  position: relative;
-  padding-bottom: 1rem;
-}
-
-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, transparent, #6B9080, transparent);
-  border-radius: 2px;
-}
-
-@media (max-width: 768px) {
-  section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
-  }
-
-  section h2::after {
-    width: 50px;
-  }
-}
-
-/* Experience section enhancements */
-.experience-card {
-  transition: all 0.2s ease;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(107, 144, 128, 0.1);
-}
-
-.experience-card:hover {
-  box-shadow: 0 12px 32px rgba(107, 144, 128, 0.1);
-  border-color: rgba(107, 144, 128, 0.2);
-  transform: translateY(-2px);
-}
-
-.job-pill {
-  background: rgba(107, 144, 128, 0.1);
-  color: var(--primary-dark);
   font-weight: 600;
-  border-radius: 999px;
-  padding: 0.45rem 0.7rem;
-  font-size: 0.85rem;
-  white-space: nowrap;
-  display: inline-block;
-  margin-top: 0.5rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
 }
 
-/* Education card styling */
+.github-cta-btn:hover {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+/* ─── About: Education ───────────────────────────────────────────────────── */
 .education-item h3 {
   color: var(--primary-color);
   font-size: 1.1rem;
@@ -844,4 +504,83 @@ section h2::after {
 
 .education-item p {
   margin-bottom: 0.5rem;
+}
+
+/* ─── About: Languages & Interests ──────────────────────────────────────── */
+.language-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 20px;
+  background: rgba(107, 144, 128, 0.07);
+  border: 1px solid rgba(107, 144, 128, 0.2);
+}
+
+.language-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.language-level {
+  font-size: 0.75rem;
+  color: var(--muted);
+  background: rgba(107, 144, 128, 0.12);
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px;
+}
+
+.hobby-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 10px;
+  background: rgba(107, 144, 128, 0.07);
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.hobby-item:hover {
+  background: rgba(107, 144, 128, 0.15);
+  transform: translateY(-2px);
+}
+
+.hobby-emoji {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+/* ─── Footer ─────────────────────────────────────────────────────────────── */
+footer {
+  margin-top: 60px;
+  padding: 40px 20px 30px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(240, 246, 243, 0.6) 0%, rgba(245, 249, 247, 0.8) 100%);
+  border-top: 1px solid rgba(107, 144, 128, 0.15);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+footer img.logo {
+  height: 40px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+footer img.logo:hover {
+  opacity: 1;
+}
+
+footer a {
+  transition: all 0.2s ease;
+  color: var(--primary-color);
+}
+
+footer a:hover {
+  color: var(--primary-dark);
 }

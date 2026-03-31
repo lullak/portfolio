@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
 import logo from "../assets/images/db_logo.png";
 
 const Footer = () => (
@@ -17,7 +15,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="text-dark mx-2"
         >
-          <i className="fab fa-linkedin fa-2x"></i>
+          <i className="bi bi-linkedin fs-3"></i>
         </a>
         <a
           href="https://github.com/lullak"
@@ -25,7 +23,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="text-dark mx-2"
         >
-          <i className="fab fa-github fa-2x"></i>
+          <i className="bi bi-github fs-3"></i>
         </a>
       </div>
     </div>

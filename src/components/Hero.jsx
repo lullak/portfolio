@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
 import picture from "../assets/images/Db_forest.jpeg";
 import cv from "../assets/files/Dennis_Bircan_CV.pdf";
 
@@ -20,20 +18,13 @@ const Hero = () => (
 
           <div className="d-flex justify-content-center gap-3 mb-5">
             <a
-              href="mailto:dennisbircan@gmail.com"
-              className="hero-social"
-              title="Email"
-            >
-              <i className="fas fa-envelope"></i>
-            </a>
-            <a
               href="https://www.linkedin.com/in/dennis-bircan-a43bb2135/"
               target="_blank"
               rel="noreferrer"
               className="hero-social"
               title="LinkedIn"
             >
-              <i className="fab fa-linkedin"></i>
+              <i className="bi bi-linkedin"></i>
             </a>
             <a
               href="https://github.com/lullak"
@@ -42,7 +33,7 @@ const Hero = () => (
               className="hero-social"
               title="GitHub"
             >
-              <i className="fab fa-github"></i>
+              <i className="bi bi-github"></i>
             </a>
           </div>
 
@@ -53,10 +44,10 @@ const Hero = () => (
               rel="noopener noreferrer"
               className="btn btn-primary w-100"
             >
-              <i className="fas fa-download me-2"></i> Download CV
+              <i className="bi bi-download me-2"></i> Download CV
             </a>
             <a
-              href="mailto:dennisbircan@gmail.com"
+              href="https://www.linkedin.com/in/dennis-bircan-a43bb2135/"
               className="btn btn-outline-dark w-100"
             >
               Get in touch
@@ -67,7 +58,6 @@ const Hero = () => (
         {/* Right: profile paragraph + skill tags */}
         <div className="col-lg-8 col-md-7">
           <div className="hero-content">
-            <h2 className="h4 mb-4 text-muted">About Me</h2>
             <p className="hero-paragraph mb-5">
               Software developer with a background in economics, finance, and
               operations management. Six years working directly with CEOs and CFOs

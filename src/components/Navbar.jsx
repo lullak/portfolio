@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../assets/images/db_logo.png";
 
 const Navbar = () => (
@@ -15,7 +14,7 @@ const Navbar = () => (
             rel="noreferrer"
             className="text-dark mx-2"
           >
-            <i className="fab fa-linkedin fa-2x"></i>
+            <i className="bi bi-linkedin fs-3"></i>
           </a>
           <a
             href="https://github.com/lullak"
@@ -23,7 +22,7 @@ const Navbar = () => (
             rel="noreferrer"
             className="text-dark mx-2"
           >
-            <i className="fab fa-github fa-2x"></i>
+            <i className="bi bi-github fs-3"></i>
           </a>
         </div>
         <button
@@ -50,13 +49,18 @@ const Navbar = () => (
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">
-                About
+              <a className="nav-link" href="#skills">
+                Skills
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#skills">
-                Skills & Portfolio
+              <a className="nav-link" href="#projects">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#about">
+                Education
               </a>
             </li>
          {/*   <li className="nav-item">
