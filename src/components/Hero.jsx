@@ -1,5 +1,5 @@
 import picture from "../assets/images/Db_forest.jpeg";
-import cv from "../assets/files/Dennis_Bircan_CV.pdf";
+import cv from "../assets/files/DB_CV.pdf";
 
 const Hero = () => (
   <section id="hero" className="hero-section">

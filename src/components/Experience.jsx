@@ -1,4 +1,4 @@
-import cv from "../assets/files/Dennis_Bircan_CV.pdf";
+import cv from "../assets/files/DB_CV.pdf";
 
 const Experience = () => (
   <section id="experience">
@@ -32,7 +32,7 @@ const Experience = () => (
                 <li>
                   Led the full rewrite of a legacy EDI processing service, replacing
                   regex-based parsing with a typed, model-driven approach. Upgraded the
-                  codebase from .NET 4.5 to .NET 10, adding unit tests with NUnit as part
+                  codebase from .NET Core 3.1 to .NET 10, adding unit tests with NUnit as part
                   of the effort.
                 </li>
                 <li>
