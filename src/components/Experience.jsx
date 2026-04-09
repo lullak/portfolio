@@ -1,4 +1,4 @@
-import cv from "../assets/files/DB_CV.pdf";
+import cv from "../assets/files/Dennis_Bircan_CV.pdf";
 
 const Experience = () => (
   <section id="experience">
