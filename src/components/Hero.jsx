@@ -14,14 +14,15 @@ const Hero = () => (
             className="hero-photo mb-4"
           />
           <h1 className="h2 mb-2">Dennis Bircan</h1>
-          <p className="hero-title mb-4">Software Developer</p>
+          <p className="hero-title mb-4">Backend .NET Software Developer</p>
 
           <div className="d-flex justify-content-center gap-3 mb-5">
             <a
               href="https://www.linkedin.com/in/dennis-bircan-a43bb2135/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hero-social"
+              aria-label="Open Dennis Bircan&apos;s LinkedIn profile"
               title="LinkedIn"
             >
               <i className="bi bi-linkedin"></i>
@@ -29,8 +30,9 @@ const Hero = () => (
             <a
               href="https://github.com/lullak"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hero-social"
+              aria-label="Open Dennis Bircan&apos;s GitHub profile"
               title="GitHub"
             >
               <i className="bi bi-github"></i>
@@ -48,9 +50,11 @@ const Hero = () => (
             </a>
             <a
               href="https://www.linkedin.com/in/dennis-bircan-a43bb2135/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-outline-dark w-100"
             >
-              Get in touch
+              Contact me on LinkedIn
             </a>
           </div>
         </div>
@@ -59,15 +63,13 @@ const Hero = () => (
         <div className="col-lg-8 col-md-7">
           <div className="hero-content">
             <p className="hero-paragraph mb-5">
-              Software developer with a background in economics, finance, and
+              Backend developer with a background in economics, finance, and
               operations management. Six years working directly with CEOs and CFOs
-              of publicly listed companies across industries such as pharma, real
-              estate, mining, and space tech has built an unusually strong ability
-              to understand complex business logic and translate it into technical
-              solutions that actually solve the right problems. That foundation,
-              combined with hands-on backend development experience in event-driven
-              systems, integration development, and CI/CD, makes for a developer
-              who doesn't just write code — but understands why it matters.
+              of publicly listed companies built a strong ability to understand
+              complex business logic and translate it into practical technical
+              solutions. Combined with hands-on experience in event-driven systems,
+              integrations, and CI/CD, that business perspective helps me build
+              backend software that solves the right problems.
             </p>
 
             <div>

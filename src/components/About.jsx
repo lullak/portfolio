@@ -11,7 +11,7 @@ const About = () => (
             <div className="education-item mb-4">
               <h3 className="mb-1">Software Developer .NET</h3>
               <p className="text-muted mb-2">
-                <em>Nackademin, Solna · Graduating May 2026</em>
+                <em>Nackademin, Solna · Graduated May 2026</em>
               </p>
               <p className="small">
                 Two-year vocational higher education programme. Core areas: .NET, C#, ASP.NET Core, API development, databases, JavaScript, TypeScript, React, object-oriented design, DevOps, CI/CD, Azure, data communication and security.
