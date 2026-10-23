@@ -11,16 +11,18 @@ const Navbar = () => (
           <a
             href="https://www.linkedin.com/in/dennis-bircan-a43bb2135/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="text-dark mx-2"
+            aria-label="Open Dennis Bircan&apos;s LinkedIn profile"
           >
             <i className="bi bi-linkedin fs-3"></i>
           </a>
           <a
             href="https://github.com/lullak"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="text-dark mx-2"
+            aria-label="Open Dennis Bircan&apos;s GitHub profile"
           >
             <i className="bi bi-github fs-3"></i>
           </a>
@@ -55,7 +57,7 @@ const Navbar = () => (
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#projects">
-                Projects
+              Public Work
               </a>
             </li>
             <li className="nav-item">
@@ -63,12 +65,6 @@ const Navbar = () => (
                 Education
               </a>
             </li>
-         {/*   <li className="nav-item">
-              <a className="nav-link" href="#typecraft">
-                Minigame
-              </a>
-            </li>*/}
-            {/* <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li> */}
           </ul>
         </div>
       </div>
